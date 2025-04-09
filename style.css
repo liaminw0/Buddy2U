@@ -52,6 +52,7 @@ html, body {
   max-width: 600px;
   z-index: 99;
   margin: 1rem;
+  text-align: center;
 }
 
 .splash-logo {
