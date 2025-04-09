@@ -253,7 +253,7 @@ html, body {
     top: 0;
     right: 0;
     width: 200px;
-    height: 100vh;
+    height: calc(100vh - env(safe-area-inset-bottom));
     background-color: white;
     padding: 1rem;
     transition: transform 0.3s ease-in-out;
