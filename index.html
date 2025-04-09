@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/297942256a.js" crossorigin="anonymous"></script>
+  <title>Buddy2u</title>
+</head>
+<body>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  
+    <div class="site-container">
+      <main>
+        <div class="splash" id="home">
+            <div class="bluecover"></div>
+            <div class="splash-info">
+                <div class="splash-logo"></div>
+                <p>Bij Buddy2U draait alles om verbinding. Jongeren tussen de 15 en 30 jaar worden gekoppeld aan iemand die behoefte heeft aan meer sociaal contact. Samen trekken ze zes maanden op in een gelijkwaardige relatie. Of je nu samen wandelt, spelletjes speelt of gewoon een goed gesprek voert – het draait om tijd, aandacht en versterking.
+                  👉 Meedoen betekent niet alleen iets betekenen voor een ander, maar ook jezelf beter leren kennen, je talenten ontdekken én groeien als persoon. Je krijgt zelfs een certificaat dat je kunt gebruiken op je cv!</p>
+                <a href="#" class="meedoen">Doe je mee?</a>
+            </div>
+            <div class="splash-image"></div>
+        </div>
+        <div class="over" id="over">
+          <div class="over-info">
+          <div class="text-over">
+            <h1>🧑‍🤝‍🧑 Over ons</h1>
+            <p><strong>Buddy2U</strong> is een samenwerking tussen Assen Bloeit en Begr!p Assen. Het project is onderdeel van de Maatschappelijke Diensttijd (MDT), een landelijk initiatief om jongeren actief te betrekken bij de samenleving.</p>
+            <p>We geloven dat iedereen iets te bieden heeft. Daarom koppelen we jongeren aan een ‘maatje’ waarmee ze op gelijkwaardige basis optrekken. Zo bestrijden we eenzaamheid én versterken we persoonlijke groei.</p>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
+          <div class="imagecover"></div>
+        </div>
+        <div class="traject" id="traject">
+          <h1>🔄 Hoe werkt het buddytraject?</h1>
+          <div class="traject-container">
+            <div class="traject-box">
+              <h2>📌 Stap 1: Aanmelden</h2>
+              <p>Meld je aan via het formulier op deze website. Je kiest zelf met welke doelgroep je graag gekoppeld wilt worden.</p>
+            </div>
+            <div class="traject-box">
+              <h2>📌 Stap 2: Kennismaken & Matchen</h2>
+              <p>Na een kennismakingsgesprek zoeken we een passende buddy voor jou. Klikt het? Dan start jullie buddyreis!</p>
+            </div>
+            <div class="traject-box">
+              <h2>📌 Stap 3: Samen op pad</h2>
+              <p>Zes maanden lang ondernemen jullie regelmatig iets samen: individueel én in groepsactiviteiten. Denk aan samen koken, wandelen, een verrassing organiseren of meedoen aan een creatieve workshop.</p>
+            </div>
+            <div class="traject-box">
+              <h2>📌 Stap 4: Afsluiting & Certificaat</h2>
+              <p>Na afloop is er een feestelijke afsluiting met een portretpresentatie, dankwoord én de uitreiking van je MDT-certificaat!</p>
+            </div>
+          </div>
+        </div>
+        <div class="mdt" id="mdt">
+          <h1>💪 MDT</h1>
+          <div class="mdt-info">
+            <p>Maatschappelijke Diensttijd (MDT) biedt jongeren tussen de 12 en 30 jaar de kans
+              om gedurende een aantal weken tot maanden hun talenten te ontwikkelen, mensen
+              te ontmoeten buiten hun leefwereld en iets te doen voor een ander en/of de
+              samenleving. Zo organiseren jongeren bijvoorbeeld sportactiviteiten in de buurt,
+              geven taalles aan nieuwkomers of begeleiden eenzame ouderen als buddy. MDT
+              helpt jongeren hun draai te vinden in de samenleving en vergroot hun
+              maatschappelijke betrokkenheid</p>
+              <a href="https://www.doemeemetmdt.nl/"><div class="mdt-logo"></div></a>
+          </div>
+        </div>
+        <div class="footer" id="footer">
+          <div class="contact">
+            <h1>📞 contact</h1>
+            <p>Contact opnemen kan via <a href="mailto:info@buddy2u.nl"><strong>info@buddy2u.nl</strong></a></p>
+          </div>
+          <div class="meedoen-container">
+            <h1>Doe je mee?</h1>
+            <a href="" class="meedoen">Meedoen!</a>
+          </div>
+      </main>
+      <header id="sidebar">
+        <div class="logo-nav"></div>
+        <nav>
+        <div class="progress">
+            <div class="dot" id="scroll-dot"></div>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#over">Over ons</a></li>
+            <li><a href="#traject">Traject</a></li>
+            <li><a href="#mdt">MDT</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li class="meedoen"><a href="#">Doe je mee?</a></li>
+            <div class="partners">
+              <div class="Begrip partner"><a href="https://www.begripassen.nl/"></a></div>
+              <div class="Bloeit partner"><a href="https://assenbloeit.nl/"></a></div>
+              <div class="MDT partner"><a href="https://mdtyeswijdoenmee.nl//"></a></div>
+            </div>
+        </ul>
+        </nav>
+    </header>
+    </div>
+  
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const sidebar = document.getElementById('sidebar');
+  
+      hamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('show');
+        hamburger.classList.toggle('show');
+      });
+      // Select the dot element
+const dot = document.getElementById('scroll-dot');
+
+// Function to update the dot's position based on scroll
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY; // Get current scroll position
+  const progressHeight = document.querySelector('.progress').clientHeight; // Get the height of the progress bar
+  const scrollMax = document.body.scrollHeight - window.innerHeight; // Max scrollable area
+
+  // Calculate the dot's position based on scroll
+  const dotPosition = (scrollPosition / scrollMax) * progressHeight;
+
+  // Update dot's top position
+  dot.style.top = `${dotPosition}px`;
+});
+    </script>
+  </body>  
+</html>

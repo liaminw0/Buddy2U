@@ -1,0 +1,464 @@
+/* Reset */
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    font-size: 1.2rem;;
+  }
+  
+  /* Container */
+  .site-container {
+    display: flex;
+  }
+  
+  /* Main content */
+  main {
+    color: white;
+    background-color: #27425a;
+    padding: -2rem;
+    padding-top: 0;
+    overflow: auto;
+    margin-right: 232px; /* reserve space for sidebar on desktop */
+    flex-grow: 1;
+    transition: margin-right 0.3s ease;
+  }
+
+  h1 {
+    color: white;
+    margin: 0;
+  }
+
+.splash {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.splash-info {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  z-index: 99;
+  margin: 1rem;
+}
+
+.splash-logo {
+    width: 20rem;
+    height: 8rem;
+    background-image: url('assests/splash-logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; /* ✅ Center it horizontally */
+}
+
+.splash-image {
+  background-image: url(assests/about.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 600px;
+  height: 50vh;
+  z-index: 100;
+  border-radius: 4%;  
+  margin-bottom: 2rem;
+}
+
+.bluecover {
+    position: absolute;
+    margin: 0;
+    background-color: #13a7af;
+    width: 60%;
+    right: 0;
+    height: 100%;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  
+  a.meedoen {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    width: fit-content;
+    padding: .5rem 0.8rem;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    ;
+  }
+
+  .meedoen:hover {
+    background-color: #13a7af;
+    transition: ease-in-out 0.3s;
+  }
+
+/* Over*/
+
+.over {
+  width: 100%;
+  background-color: #27425a;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+
+}
+
+.imagecover {
+  margin: 0;
+  background-image: url('assests/about.jpeg');
+  background-size: cover;
+  background-position: c;
+  width: 40%;
+  height: 600px;
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 55% 100%);
+}
+
+  .over-info {
+    width: 50%;
+    float: right;
+    text-align: center;
+    margin: 2rem;
+  }
+
+  .text-over {
+    padding: 1rem;
+    height: 100%;
+  }
+
+  .text-over p, .text-over h2 {
+    text-align: center;
+  }
+
+  .fa-heart {
+    font-size: 10rem;
+    margin-top: 3rem;
+  }
+
+  .traject {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .traject-container {
+    padding-top: 4rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  .traject-box {
+    border-radius: 1rem;
+    padding: 1rem;
+    min-height: 270px;
+    width: 17rem;
+    background-color: #13a7af;
+    text-align: left;
+    -webkit-box-shadow: -1px 3px 23px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: -1px 3px 23px 0px rgba(0,0,0,0.47);
+    box-shadow: -1px 3px 23px 0px rgba(0,0,0,0.47);
+  }
+
+  .traject-box:hover {
+    background-color: #fec9ae;
+    transition: ease-in-out 0.3s;
+    color: black;
+  }
+
+  .traject-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .mdt {
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+
+  .mdt-info {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .mdt-info p {
+    max-width: 700px;
+  }
+
+
+  .mdt-logo {
+    min-width: 200px;
+    height: 200px;
+    background-image: url(assests/mdt-logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 1rem;
+  }
+
+  .footer {
+    padding: 5rem 0rem;
+    background-color: #13a7af;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+
+  .meedoen-container {
+    padding: 0 5rem;
+    text-align: center;
+  }
+
+  .meedoen-container a:hover {
+    background-color: #fec9ae;
+  }
+
+  .contact {
+    padding: 0 5rem;
+    text-align: center;
+  }
+
+  .contact p {
+    font-size: 1.5rem;
+  }
+
+  .contact a {
+    text-decoration: none;
+    color: #fc3202;
+  }
+  
+  /* Sidebar (fixed) */
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+    z-index: 998;
+    padding-top: 40px;
+  }
+
+  .progress {
+    margin-top: 2rem;
+    height: 500px;
+    border-left: 7px dotted #27425a; /* Dotted line */
+    width: 0;
+    position: relative;
+  }
+  
+  /* The moving dot */
+  .dot {
+    position: absolute;
+    left: -13px;  /* Position the dot slightly outside the line */
+    width: 18px;  /* Size of the dot */
+    height: 18px;  /* Size of the dot */
+    background-color: #13a7af;
+    border-radius: 50%;  /* Make it a circle */
+  }
+
+  nav {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  header ul {
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 100%;  /* Make the ul take up the full width */
+    list-style: none;  /* Remove the default bullet points */
+    display: flex;  /* Use flexbox layout */
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;  /* Center the items horizontally */
+    margin-top: 2rem;
+    margin-right: 1rem;
+    gap: 2rem;
+}
+
+header ul li {
+    text-align: center;
+    width: 100%;  /* Make the li take up the full width */
+    padding: .5rem 0;
+    border-radius: 7px;
+}
+
+
+header ul li a {
+    text-decoration: none;
+    color: #27425a;;
+
+}
+
+li a:active {
+    color: #13a7af;
+}
+
+.meedoen {
+      text-decoration: none;
+    text-align: center;
+    width: 100%;  /* Make the li take up the full width */
+    padding: .5rem 0;
+    border-radius: 7px;
+    background-color: #fc3202;
+}
+
+
+li:hover {
+    background-color: #fec9ae;
+    transition: ease-in-out 0.3s;
+}
+
+.meedoen a {
+    color: white;
+}
+
+
+  
+  .logo-nav {
+    width: 100%; /* Take full width of sidebar */
+    height: 50px;
+    background-image: url('assests/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; /* ✅ Center it horizontally */
+  }
+  
+  .partners {
+    display: flex;
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+
+  .partner {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: .3rem;
+  }
+
+  .partner a {
+    padding: 100%;
+  }
+
+  .Begrip {
+    background-image: url('assests/begr!p.png');
+
+  }
+
+  .Bloeit {
+    background-image: url('assests/bloeit.png');
+  }
+
+  .MDT {
+    background-image: url('assests/mdt.svg');
+  }
+  
+  /* Hamburger */
+  .hamburger {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #27425a;
+    cursor: pointer;
+  }
+
+  .hamburger.show {
+    color: #27425a;
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    
+    .site-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .splash-logo {
+      width: 250px;
+    }
+    .bluecover {
+      display: none;
+    }
+
+    .over {
+      background-color: #13a7af;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  .over-info {
+      width: 100%;
+      }
+
+    .mdt-info {
+      width: 100%;
+      margin-right: 10rem;
+    }
+
+
+
+    .imagecover {
+      display: none;
+    }
+
+    .splash-image {
+      border-radius: 0;
+      margin-bottom: 0;
+
+    }
+    .hamburger {
+      display: block;
+      color: white;
+    }
+  
+    header {
+      transform: translateX(100%);
+    }
+  
+    header.show {
+      transform: translateX(0);
+      width: 100%;
+    }
+  
+    main {
+      margin-right: 0; /* no space on mobile */
+      padding: 0;
+    }
+  
+    .site-container {
+      flex-direction: column;
+    }
+  }
+  
