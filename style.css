@@ -57,7 +57,7 @@ html, body {
 .splash-logo {
     width: 20rem;
     height: 8rem;
-    background-image: url('assests/splash-logo.svg');
+    background-image: url('assests/splash-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; /* ✅ Center it horizontally */
