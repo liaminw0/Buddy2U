@@ -421,7 +421,10 @@ li:hover {
   .over-info {
       width: 100%;
       }
-
+      .mdt {
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
     .mdt-info {
       width: 100%;
       margin-right: 10rem;
