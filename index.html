@@ -108,6 +108,18 @@
         sidebar.classList.toggle('show');
         hamburger.classList.toggle('show');
       });
+
+        // Close sidebar when any nav link is clicked (on mobile)
+  const navLinks = sidebar.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Only close sidebar if screen width is less than 768px (mobile)
+      if (window.innerWidth <= 768) {
+        sidebar.classList.remove('show');
+        hamburger.classList.remove('show');
+      }
+    });
+  });
       // Select the dot element
 const dot = document.getElementById('scroll-dot');
 

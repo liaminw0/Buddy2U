@@ -460,5 +460,11 @@ li:hover {
     .site-container {
       flex-direction: column;
     }
+    header {
+      transform: translateX(100%);
+    }
+    header.show {
+      transform: translateX(0);
+    }
   }
   
