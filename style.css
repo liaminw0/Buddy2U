@@ -118,9 +118,9 @@ html, body {
 
 .imagecover {
   margin: 0;
-  background-image: url('assests/about.jpeg');
+  background-image: url('assests/foto.JPG');
   background-size: cover;
-  background-position: c;
+  background-position: right;
   width: 40%;
   height: 600px;
   clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 55% 100%);
