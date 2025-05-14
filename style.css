@@ -1,9 +1,11 @@
 /* Reset */
 html, body {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   p {
@@ -74,6 +76,10 @@ html, body {
   z-index: 100;
   border-radius: 4%;  
   margin-bottom: 2rem;
+}
+
+.splash p {
+  font-weight: 700;
 }
 
 .bluecover {
@@ -189,7 +195,8 @@ html, body {
 
   .mdt {
     text-align: center;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
+    padding-top: 2rem;
   }
 
   .mdt-info {
@@ -216,37 +223,134 @@ html, body {
     margin: 0 1rem;
   }
 
-  .footer {
-    padding: 5rem 0rem;
-    background-color: #13a7af;
+/* Footer */
+.footer {
+  background-color: #13a7af;
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  justify-content: space-around; /* Adjust spacing between the contact form and info */
+  align-items: stretch; /* Align items to the top */
+  gap: 2rem; /* Space between the two sections */
+  flex-wrap: wrap;
+}
+
+.contact {
+  text-align: center;
+  width: 100%;
+  max-width: 500px; /* Set a max width for the contact info */
+}
+
+.contact h1 {
+  margin-bottom: 1rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input, textarea {
+  box-sizing: border-box;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%; /* Full width */
+  font-size: 1rem;
+}
+
+
+textarea {
+  resize: none;
+  height: 200px; /* Set a fixed height for the textarea */
+}
+
+button {
+  color: white;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  padding: .5rem 1rem;
+  border-radius: 7px;
+  background-color: #fc3202;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #fec9ae;
+  color: #27425a;
+  cursor: pointer;
+}
+
+.contact-info { 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px; /* Set a max width for the contact info */
+}
+
+.contact-info h1 {
+  margin-bottom: 1rem;
+
+  
+  }
+
+  .break {
     display: flex;
-    flex-direction: row;
-    justify-content:center;
     flex-wrap: wrap;
+    gap: 0.5rem; /* optional space between label and email */
+  }
+  
+  .break span {
+    white-space: nowrap; /* prevent breaking inside 'Emailadres:' */
+  }
+  .contact-info p {
+  margin: 0;
+  font-size: 19px;
+  padding: 10px;
+  
   }
 
-  .meedoen-container {
-    padding: 0 5rem;
-    text-align: center;
-  }
-
-  .meedoen-container a:hover {
-    background-color: #fec9ae;
-  }
-
-  .contact {
-    padding: 0 5rem;
-    text-align: center;
-  }
-
-  .contact p {
-    font-size: 1.5rem;
-  }
-
-  .contact a {
+  .contact-info a {
     text-decoration: none;
-    color: #fc3202;
+    color: #27425a;
+    font-weight: bolder;
   }
+
+  .align {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+
+
+
+.map-container {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 1rem;
+}
+ 
+
+iframe {
+  border-radius: 7px;
+  border: none;
+}
+
+.copy {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+}
   
   /* Sidebar (fixed) */
   header {
@@ -263,8 +367,8 @@ html, body {
   }
 
   .progress {
-    margin-top: 2rem;
-    height: 500px;
+    margin-top: 2.5rem;
+    height: 321px;
     border-left: 7px dotted #27425a; /* Dotted line */
     width: 0;
     position: relative;
@@ -278,6 +382,7 @@ html, body {
     height: 18px;  /* Size of the dot */
     background-color: #13a7af;
     border-radius: 50%;  /* Make it a circle */
+    transition: top 0.3s ease-out;   /* ← smoothly animate top changes */
   }
 
   nav {
@@ -319,7 +424,7 @@ li a:active {
 }
 
 .meedoen {
-      text-decoration: none;
+    text-decoration: none;
     text-align: center;
     width: 100%;  /* Make the li take up the full width */
     padding: .5rem 0;
