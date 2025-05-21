@@ -167,11 +167,14 @@ html, body {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    align-items: start;
+    align-items: stretch;
     flex-wrap: wrap;
   }
 
   .traject-box {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     border-radius: 1rem;
     padding: 1rem;
     min-height: 270px;
@@ -191,6 +194,15 @@ html, body {
 
   .traject-box h2 {
     font-size: 1.4rem;
+  }
+
+  .traject-box h2, .traject-box h3 {
+    text-align: center;
+    margin: .2rem 0;
+  }
+
+  .traject-box p {
+    margin: .9rem;
   }
 
   .mdt {
