@@ -202,7 +202,8 @@ html, body {
   }
 
   .traject-box p {
-    margin: .9rem;
+    margin: .9rem 0;
+    text-align: center;
   }
 
   .mdt {
